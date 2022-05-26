@@ -21,7 +21,29 @@ smallest = number
 
 number = int(input("Enter another number: "))
 
-if number < smallest:
-  smallest = number
-  
-print("The smallest number is ", smallest)
+middle = number
+
+number = int(input("Enter another number: "))
+
+if smallest < middle and smallest < number:
+  print("The smallest number is", smallest)
+
+if middle < smallest and middle < number:
+  print("The smallest number is", middle)
+
+if number < smallest and number < middle:
+  print("The smallest number is", number)
+
+if smallest < number and smallest == middle:
+  print("The smallest number is", smallest)
+
+if smallest < middle and smallest == number:
+  print("The smallest number is", smallest)
+
+if middle < smallest and middle == number:
+  print("The smallest number is", middle)
+
+if middle == smallest == number:
+  print("The smallest number is", middle)
+
+#FINISHED
