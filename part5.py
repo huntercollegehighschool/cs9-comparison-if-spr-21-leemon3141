@@ -23,3 +23,16 @@ not a month
 '''
 
 #start writing your code below
+month = input("Enter a month: ")
+while month not in ["January", "january", "February", "february", "March", "march", "April", "april", "May", "may", "June", "june", "July", "july", "August", "august", "September", "september", "October", "october", "November", "november", "December", "december"]:
+  print("not a month")
+  month = input("Enter a month: ")
+
+if month == ["January", "january", "March", "march", "May", "may", "July", "july", "August", "august", "October", "october", "December", "december"]:
+  print("31")
+if month == ["April", "april", "June", "june", "September", "september", "November", "november"]:
+  print("30")
+if month == ["February", "february"]:
+  print("28")
+
+
