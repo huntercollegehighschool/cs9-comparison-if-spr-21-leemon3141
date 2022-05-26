@@ -28,11 +28,13 @@ while month not in ["January", "january", "February", "february", "March", "marc
   print("not a month")
   month = input("Enter a month: ")
 
-if month == ["January", "january", "March", "march", "May", "may", "July", "july", "August", "august", "October", "october", "December", "december"]:
-  print("31")
-if month == ["April", "april", "June", "june", "September", "september", "November", "november"]:
+while month in ["January", "january", "March", "march", "May", "may", "July", "july", "August", "august", "October", "october", "December", "december"]:
+  print('31')
+
+while month in ["April" or "april" or "June" or "june" or "September" or "september" or "November" or "november"]:
   print("30")
-if month == ["February", "february"]:
+
+while month in ["February" or "february"]:
   print("28")
 
 
