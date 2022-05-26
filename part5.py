@@ -24,17 +24,18 @@ not a month
 
 #start writing your code below
 month = input("Enter a month: ")
-while month not in ["January", "january", "February", "february", "March", "march", "April", "april", "May", "may", "June", "june", "July", "july", "August", "august", "September", "september", "October", "october", "November", "november", "December", "december"]:
-  print("not a month")
-  month = input("Enter a month: ")
+while month not in ['January', 'january', 'February', 'february', 'March', 'march', 'April', 'april', 'May', 'may', 'June', 'june', 'July', 'july' , 'August', 'august', 'September', 'september', 'October', 'october', 'November', 'november', 'December', 'december']:
+  print('not a month')
+  month = input('Enter a month: ')
 
-while month in ["January", "january", "March", "march", "May", "may", "July", "july", "August", "august", "October", "october", "December", "december"]:
-  print('31')
+if month == 'January'  or month == 'january' or month == 'March' or month == 'march' or month == 'May' or month == 'may' or month == 'July' or month == 'july' or month == 'August' or month == 'august' or month == 'October' or month == 'october' or month == 'December' or month == 'december':
+  print("31")
 
-while month in ["April" or "april" or "June" or "june" or "September" or "september" or "November" or "november"]:
+elif month == 'April' or month == 'april' or month == 'June' or month == 'june' or month == 'September' or month == 'september' or month == 'November' or month == 'november':
   print("30")
 
-while month in ["February" or "february"]:
-  print("28")
+elif month == 'February' or month == 'february':
+  print("28 or 29")
+
 
 
